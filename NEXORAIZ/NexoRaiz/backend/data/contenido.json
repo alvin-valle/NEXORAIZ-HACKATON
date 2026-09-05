@@ -1,0 +1,66 @@
+{
+  "turismo": [
+    { "id": "leon", "nombre": "León", "departamento": "León", "categoria": "Cultural", "coordenadas": { "lat": 12.4378, "lng": -86.8780 }, "descripcion": "Ciudad universitaria y colonial, cuna de poetas y hogar de la imponente Catedral de León.", "imagen": "images/turismo/leon.jpg", "imperdibles": ["Catedral de León", "Hervideros de San Jacinto", "Las Peñitas"], "rating": 4.7 },
+    { "id": "boaco", "nombre": "Boaco", "departamento": "Boaco", "categoria": "Naturaleza", "coordenadas": { "lat": 12.472657, "lng": -85.659963 }, "descripcion": "Conocida como la Ciudad de Dos Pisos, destaca por la ganadería y la producción de leche y queso.", "imagen": "images/turismo/boaco.jpg", "imperdibles": ["Cascada El Timal", "Cerro Musún", "Parque Nacional Cerro Cumaica - Cerro Alegre"], "rating": 4.3 },
+    { "id": "carazo", "nombre": "Carazo", "departamento": "Carazo", "categoria": "Playa", "coordenadas": { "lat": 11.856628, "lng": -86.240613 }, "descripcion": "Fue muy reconocido por sus cultivos de café. Actualmente destacan sus paisajes naturales y sus playas en el Pacífico.", "imagen": "images/turismo/carazo.jpg", "imperdibles": ["Playa La Boquita", "Reserva La Makina", "Restaurante Vilas"], "rating": 4.5 },
+    { "id": "chinandega", "nombre": "Chinandega", "departamento": "Chinandega", "categoria": "Aventura", "coordenadas": { "lat": 12.631084, "lng": -87.134736 }, "descripcion": "Uno de los departamentos más productivos del país, reconocido por sus cultivos y por albergar el volcán San Cristóbal.", "imagen": "images/turismo/chinandega.jpg", "imperdibles": ["Volcán San Cristóbal", "Playa Jiquilillo", "Reserva Natural Isla Juan Venado"], "rating": 4.4 },
+    { "id": "chontales", "nombre": "Chontales", "departamento": "Chontales", "categoria": "Naturaleza", "coordenadas": { "lat": 11.968587, "lng": -85.170082 }, "descripcion": "Destaca por la ganadería y la producción de carne y lácteos, además de importantes recursos mineros.", "imagen": "images/turismo/chontales.jpg", "imperdibles": ["Lago de Apanás", "Cueva de Cuapa", "Río Mayales"], "rating": 4.1 },
+    { "id": "esteli", "nombre": "Estelí", "departamento": "Estelí", "categoria": "Cultural", "coordenadas": { "lat": 13.092881, "lng": -86.356289 }, "descripcion": "Reconocido internacionalmente por la fabricación de puros de alta calidad y por su actividad comercial.", "imagen": "images/turismo/esteli.jpg", "imperdibles": ["Reserva Natural Tisey - Estanzuela", "Mirador Estelí", "Estadio Independencia"], "rating": 4.4 },
+    { "id": "granada", "nombre": "Granada", "departamento": "Granada", "categoria": "Cultural", "coordenadas": { "lat": 11.9310, "lng": -85.9560 }, "descripcion": "La Gran Sultana, famosa por su arquitectura colonial perfectamente conservada y las bellas Isletas en el Lago Cocibolca.", "imagen": "images/turismo/granada.jpg", "imperdibles": ["Calle La Calzada", "Isletas de Granada", "Volcán Mombacho"], "rating": 4.8 },
+    { "id": "masaya", "nombre": "Masaya", "departamento": "Masaya", "categoria": "Aventura", "coordenadas": { "lat": 11.9744, "lng": -86.0942 }, "descripcion": "Capital del folklore nicaragüense, hogar del majestuoso Volcán Masaya y su mercado de artesanías.", "imagen": "images/turismo/masaya.jpg", "imperdibles": ["Volcán Masaya (Santiago)", "Mercado de Artesanías", "Mirador de Catarina"], "rating": 4.6 },
+    { "id": "rivas", "nombre": "Rivas (Isla de Ometepe)", "departamento": "Rivas", "categoria": "Naturaleza", "coordenadas": { "lat": 11.5034, "lng": -85.6171 }, "descripcion": "Una isla paradisíaca en medio del Gran Lago, formada por dos colosales volcanes: el Concepción y el Maderas.", "imagen": "images/turismo/rivas.jpg", "imperdibles": ["Isla de Ometepe", "Punta Jesús María", "Cascada de San Ramón"], "rating": 4.9 },
+    { "id": "jinotega", "nombre": "Jinotega", "departamento": "Jinotega", "categoria": "Naturaleza", "coordenadas": { "lat": 13.776067, "lng": -85.407329 }, "descripcion": "Conocido como la Ciudad de las Brumas, es el principal productor de café de Nicaragua y posee un clima fresco.", "imagen": "images/turismo/jinotega.jpg", "imperdibles": ["Lago de Apanás", "Cascada de la Luna", "Reserva Natural Cerro Datanlí - El Diablo"], "rating": 4.5 },
+    { "id": "madriz", "nombre": "Madriz", "departamento": "Madriz", "categoria": "Aventura", "coordenadas": { "lat": 13.39914, "lng": -86.39872 }, "descripcion": "Departamento montañoso dedicado principalmente a la agricultura, especialmente al cultivo de café y granos básicos.", "imagen": "images/turismo/madriz.jpg", "imperdibles": ["Cañón de Somoto", "Cerro Mogotón", "Reserva Natural Tepesomoto - Pataste"], "rating": 4.7 },
+    { "id": "managua", "nombre": "Managua", "departamento": "Managua", "categoria": "Cultural", "coordenadas": { "lat": 12.12103, "lng": -86.26059 }, "descripcion": "Capital de Nicaragua y el principal centro político, económico y comercial del país.", "imagen": "images/turismo/managua.jpg", "imperdibles": ["Loma de Tiscapa", "Puerto Salvador Allende", "Reserva Natural Chocoyero - El Brujo"], "rating": 4.2 },
+    { "id": "matagalpa", "nombre": "Matagalpa", "departamento": "Matagalpa", "categoria": "Naturaleza", "coordenadas": { "lat": 12.92359, "lng": -85.92261 }, "descripcion": "Destaca por la producción de café, cacao y hortalizas, además de su clima agradable y montañoso.", "imagen": "images/turismo/matagalpa.jpg", "imperdibles": ["Selva Negra", "Cascada Blanca", "Reserva Natural Cerro Apante"], "rating": 4.6 },
+    { "id": "nuevasegovia", "nombre": "Nueva Segovia", "departamento": "Nueva Segovia", "categoria": "Naturaleza", "coordenadas": { "lat": 13.77248, "lng": -86.05874 }, "descripcion": "Reconocida por sus bosques de pino, el cultivo de café y su importancia histórica.", "imagen": "images/turismo/nuevasegovia.jpg", "imperdibles": ["Aguas Termales don Alfonso", "Cerro Mogotón", "Reserva Natural Tepesomoto - Pataste"], "rating": 4.3 },
+    { "id": "riosanjuan", "nombre": "Río San Juan", "departamento": "Río San Juan", "categoria": "Naturaleza", "coordenadas": { "lat": 11.131076, "lng": -84.776012 }, "descripcion": "Se caracteriza por su riqueza natural, el río San Juan y la Reserva Biológica Indio Maíz.", "imagen": "images/turismo/riosanjuan.jpg", "imperdibles": ["Reserva Biológica Indio Maíz", "Castillo de la Inmaculada Concepción", "Archipiélago de Solentiname"], "rating": 4.8 },
+    { "id": "RACCN", "nombre": "Región Autónoma Costa Caribe Norte", "departamento": "RACCN", "categoria": "Playa", "coordenadas": { "lat": 13.92231, "lng": -84.40657 }, "descripcion": "Posee una gran diversidad cultural y étnica. Su economía se basa en la pesca, la minería y los recursos forestales.", "imagen": "images/turismo/RACCN.jpg", "imperdibles": ["Puerto Cabezas", "Cayos Miskitos", "Reserva de Biosfera Bosawás"], "rating": 4.4 },
+    { "id": "RACCS", "nombre": "Región Autónoma Costa Caribe Sur", "departamento": "RACCS", "categoria": "Playa", "coordenadas": { "lat": 11.6899, "lng": -84.4553 }, "descripcion": "Destaca por sus playas caribeñas, la pesca, el turismo ecológico y la convivencia de diversas comunidades.", "imagen": "images/turismo/RACCS.jpg", "imperdibles": ["Laguna de Perlas", "Bilwi", "Corn Island"], "rating": 4.7 }
+  ],
+
+  "idiomas": {
+    "Mayagna": {
+      "1": [
+        { "q": "¿Cómo se dice \"Hola\"?", "o": ["Yamni", "Bonjour", "Tinki"], "a": "Yamni" },
+        { "q": "¿Cómo dirías \"Adiós\"?", "o": ["A presto", "Pronto", "Baiki"], "a": "Baiki" },
+        { "q": "\"¿Cómo estás?\" se dice...", "o": ["Nahnki Sma?", "Como você está?", "Come va?"], "a": "Nahnki Sma?" },
+        { "q": "\"Gracias\" es equivalente a...", "o": ["Paopao", "Tinki", "Grazie"], "a": "Tinki" },
+        { "q": "Para decir \"Por favor\", se usa...", "o": ["Per Favore", "Pliskam Pali", "Tintan Yamni"], "a": "Pliskam Pali" },
+        { "q": "\"Buenas tardes\" se dice...", "o": ["Tutni Yamni", "Bon après-midi", "Titan Yamni"], "a": "Tutni Yamni" },
+        { "q": "¿Cómo se dice \"buenos días\" en Mayagna?", "o": ["Titan Yamni", "Buongiorno", "Paopao"], "a": "Titan Yamni" },
+        { "q": "\"Bienvenido\" se dice...", "o": ["Bem vindo", "Yamni Balram", "Tinki"], "a": "Yamni Balram" }
+      ],
+      "2": [
+        { "q": "¿Cómo se dice \"Casa\" en Mayagna?", "o": ["Uma", "Kiri", "Laya"], "a": "Uma" },
+        { "q": "¿Cómo se dice \"Agua\" en Mayagna?", "o": ["Lah", "Ibu", "Was"], "a": "Lah" },
+        { "q": "¿Cómo se dice \"Sol\" en Mayagna?", "o": ["Alwani", "Yu", "Kati"], "a": "Yu" }
+      ],
+      "3": [
+        { "q": "¿Cómo se dice \"Familia\" en Mayagna?", "o": ["Yumu", "Damni", "Uma"], "a": "Damni" }
+      ]
+    },
+    "Miskito": {
+      "1": [
+        { "q": "¿Cómo se dice \"Hola\" en Miskito?", "o": ["Naksa", "Kura", "Uma"], "a": "Naksa" },
+        { "q": "¿Cómo se dice \"Adiós\" en Miskito?", "o": ["Aisabe", "Pana", "Kura"], "a": "Aisabe" },
+        { "q": "¿Cómo se dice \"Gracias\" en Miskito?", "o": ["Tingki", "Pana", "Yamni"], "a": "Tingki" }
+      ],
+      "2": [
+        { "q": "¿Cómo se dice \"Casa\" en Miskito?", "o": ["Watla", "Was", "Pani"], "a": "Watla" },
+        { "q": "¿Cómo se dice \"Agua\" en Miskito?", "o": ["Li", "Watla", "Yu"], "a": "Li" }
+      ],
+      "3": [
+        { "q": "¿Cómo se dice \"Sol\" en Miskito?", "o": ["Lapta", "Kati", "Diwas"], "a": "Lapta" }
+      ]
+    }
+  },
+
+  "leyendas": [
+    { "id": "cegua", "titulo": "La Cegua", "origen": "León / Masaya", "sinopsis": "Un personaje mitológico que se aparece por las noches a los hombres mujeriegos y trasnochadores.", "narracion": "Cuentan los viejos que en los caminos oscuros, una hermosa mujer de cuerpo esbelto y cabello largo pide ayuda. Al subirse al caballo o auto del conductor, transforma su rostro en la calavera de una yegua muerta con ojos inyectados en sangre, dejando al incauto paralizado de terror.", "imagen": "images/leyendas/cegua.jpg" },
+    { "id": "carreta-nagua", "titulo": "La Carreta Nagua", "origen": "Nivel Nacional", "sinopsis": "Una ruidosa carreta fantasma que pasa por las calles solitarias a medianoche.", "narracion": "A la medianoche se escucha un estruendo de cadenas y maderas viejas flotando en el silencio. Es la Carreta Nagua, conducida por la mismísima Muerte, tirada por bueyes flacos y esqueléticos, anunciando desgracias a quienes se atreven a mirarla por la cerradura.", "imagen": "images/leyendas/carreta.jpg" },
+    { "id": "cadejo", "titulo": "El Cadejo", "origen": "Nivel Nacional", "sinopsis": "Un perro espectral que puede proteger o atormentar a quien camina solo de noche.", "narracion": "Se dice que existen dos Cadejos: uno blanco que protege a los trasnochadores del peligro, y uno negro de ojos de fuego que persigue a los borrachos y libertinos. Su presencia se anuncia con el sonido de cadenas arrastrándose en el silencio de la noche.", "imagen": "images/leyendas/cadejo.jpg" },
+    { "id": "mocuana", "titulo": "La Mocuana", "origen": "Nueva Segovia", "sinopsis": "El espíritu de una princesa indígena que aún busca el tesoro que perdió por amor.", "narracion": "Cuenta la leyenda que una princesa indígena huyó con un conquistador español llevándose el tesoro de su padre, el cacique. Al ser descubierta, el amado la abandonó y ella escondió el oro en una cueva. Hoy su espíritu, convertido en una anciana de larga cabellera, vaga por los caminos buscando a los viajeros para pedirles ayuda y, según cuentan, guiarlos hasta el tesoro perdido.", "imagen": "images/leyendas/mocuana.jpg" },
+    { "id": "padre-sin-cabeza", "titulo": "El Padre sin Cabeza", "origen": "Nivel Nacional", "sinopsis": "El fantasma de un sacerdote decapitado que ronda los caminos rurales montado a caballo.", "narracion": "Se cuenta que un sacerdote fue asesinado por defender a los indígenas de los abusos de la colonia. Desde entonces, su espíritu cabalga sin cabeza por los caminos solitarios, apareciéndose a quienes viajan de noche como un recordatorio de aquella injusticia.", "imagen": "images/leyendas/padre-sin-cabeza.jpg" }
+  ]
+}

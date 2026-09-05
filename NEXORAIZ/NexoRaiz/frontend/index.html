@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXORAIZ — Raíces que nos unen</title>
+  <meta name="description" content="Explora el turismo, las lenguas originarias y las leyendas de Nicaragua en un solo lugar." />
+  <link rel="icon" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+  <nav class="landing-nav" id="landingNav">
+    <div class="brand">
+      <img src="images/logo.png" alt="NexoRaíz" />
+      <strong>NEXORAIZ</strong>
+    </div>
+    <div class="nav-links">
+      <a href="#turismo">Turismo</a>
+      <a href="#idiomas">Idiomas</a>
+      <a href="#leyendas">Leyendas</a>
+      <button class="theme-toggle" data-toggle-theme>
+        <span data-theme-icon>🌙</span> <span data-theme-label>Modo oscuro</span>
+      </button>
+      <a href="login.html">Iniciar sesión</a>
+      <a href="registro.html" class="nav-cta">Crear cuenta</a>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Conecta con <span>nuestras raíces</span></h1>
+      <p>Explora la cultura, los destinos, las lenguas y las historias que hacen única a Nicaragua. Un viaje interactivo hecho para viajeros, estudiantes y guardianes de la tradición.</p>
+      <div class="hero-actions">
+        <a href="registro.html" class="btn-hero-primario">🚀 Comenzar gratis</a>
+        <a href="login.html" class="btn-hero-secundario">Ya tengo cuenta</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><strong>17+</strong><span>Departamentos</span></div>
+        <div class="stat"><strong>2</strong><span>Lenguas originarias</span></div>
+        <div class="stat"><strong>5+</strong><span>Leyendas y mitos</span></div>
+        <div class="stat"><strong>100%</strong><span>Gratis</span></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="landing-section" id="que-es">
+    <span class="section-tag">¿Qué es NexoRaíz?</span>
+    <h2>Un puente entre viajeros y la identidad nicaragüense</h2>
+    <p class="section-lead">Nuestra misión es doble: promover los destinos turísticos más espectaculares del país mientras preservamos y rescatamos las lenguas ancestrales <strong>Mayagna</strong> y <strong>Miskito</strong> a través de metodologías de aprendizaje dinámicas y gamificadas.</p>
+
+    <div class="features-cards">
+      <div class="feature-card" id="turismo">
+        <div class="icon-box">🗺️</div>
+        <h3>Explora</h3>
+        <p>Descubre destinos, mapas interactivos e historias de cada rincón de Nicaragua.</p>
+      </div>
+      <div class="feature-card" id="idiomas">
+        <div class="icon-box">🗣️</div>
+        <h3>Aprende</h3>
+        <p>Aprende Mayagna y Miskito de forma interactiva, con niveles, vidas y puntuación.</p>
+      </div>
+      <div class="feature-card" id="leyendas">
+        <div class="icon-box">📜</div>
+        <h3>Conecta</h3>
+        <p>Sumérgete en la mitología nacional y preserva nuestra identidad cultural.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="landing-section">
+    <span class="section-tag">Turismo</span>
+    <h2>Destinos que te esperan</h2>
+    <p class="section-lead">Una muestra de los lugares que podrás explorar con mapas, imágenes y datos prácticos dentro de la plataforma.</p>
+    <div class="destinos-preview">
+      <div class="destino-card" style="background-image:url('images/turismo/rivas.jpg')">
+        <div class="info"><strong>Isla de Ometepe</strong><span>Rivas</span></div>
+      </div>
+      <div class="destino-card" style="background-image:url('images/turismo/granada.jpg')">
+        <div class="info"><strong>Granada</strong><span>La Gran Sultana</span></div>
+      </div>
+      <div class="destino-card" style="background-image:url('images/turismo/masaya.jpg')">
+        <div class="info"><strong>Volcán Masaya</strong><span>Masaya</span></div>
+      </div>
+      <div class="destino-card" style="background-image:url('images/turismo/RACCS.jpg')">
+        <div class="info"><strong>Corn Island</strong><span>RACCS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-final">
+    <h2>Tu viaje a nuestras raíces empieza hoy</h2>
+    <p>Crea tu cuenta gratis y empieza a explorar, aprender y conectar.</p>
+    <a href="registro.html" class="btn-hero-primario">Crear cuenta gratis →</a>
+  </div>
+
+  <footer class="landing-footer">
+    <span>© 2025 NexoRaíz — Equipo NEXORAIZ. Hackatón Nicaragua.</span>
+    <span>Hecho con 💚 en Nicaragua</span>
+  </footer>
+
+  <script src="js/theme.js"></script>
+  <script>
+    window.addEventListener("scroll", () => {
+      document.getElementById("landingNav").classList.toggle("con-fondo", window.scrollY > 40);
+    });
+  </script>
+</body>
+</html>

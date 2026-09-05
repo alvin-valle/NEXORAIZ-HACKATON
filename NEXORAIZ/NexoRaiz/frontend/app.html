@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEXORAIZ — Mi cuenta</title>
+  <link rel="icon" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/turismo.css" />
+  <link rel="stylesheet" href="css/idiomas.css" />
+  <link rel="stylesheet" href="css/leyendas.css" />
+</head>
+<body>
+
+  <nav class="app-navbar">
+    <div class="brand" onclick="mostrarModulo('inicio')">
+      <img src="images/logo.png" alt="NexoRaíz" />
+      <strong>NEXORAIZ</strong>
+    </div>
+
+    <div class="navbar-search">
+      <span class="icon">🔍</span>
+      <input type="text" placeholder="Buscar destinos, idiomas, leyendas..." onclick="mostrarModulo('turismo')" readonly />
+    </div>
+
+    <div class="navbar-right">
+      <button class="theme-toggle" data-toggle-theme><span data-theme-icon>🌙</span></button>
+      <div class="user-chip">
+        <div class="avatar" data-user-avatar>U</div>
+        <span data-user-name>Explorador</span>
+      </div>
+    </div>
+  </nav>
+
+  <div class="app-layout">
+
+    <aside class="app-sidebar">
+      <button onclick="mostrarModulo('inicio')" class="sidebar-btn" id="btn-inicio">
+        <span class="emoji">🏠</span><span class="btn-text">Inicio</span>
+      </button>
+      <button onclick="mostrarModulo('turismo')" class="sidebar-btn" id="btn-turismo">
+        <span class="emoji">🗺️</span><span class="btn-text">Turismo e Historias</span>
+      </button>
+      <button onclick="mostrarModulo('idiomas')" class="sidebar-btn" id="btn-idiomas">
+        <span class="emoji">🗣️</span><span class="btn-text">Aprende Idiomas</span>
+      </button>
+      <button onclick="mostrarModulo('leyendas')" class="sidebar-btn" id="btn-leyendas">
+        <span class="emoji">📜</span><span class="btn-text">Leyendas y Mitos</span>
+      </button>
+
+      <div class="sidebar-footer">
+        <button class="sidebar-btn" id="btn-cerrar-sesion">
+          <span class="emoji">🚪</span><span class="btn-text">Cerrar sesión</span>
+        </button>
+      </div>
+    </aside>
+
+    <main class="app-main">
+
+      <!-- ==================== INICIO ==================== -->
+      <div id="inicio" class="modulo">
+        <div class="page-header">
+          <h1>¡Hola, <span data-user-name>Explorador</span>! 👋</h1>
+          <p>Nuestras raíces, nuestro futuro. ¿Qué quieres explorar hoy?</p>
+        </div>
+
+        <div class="stats-row">
+          <div class="stat-card"><strong>17+</strong><span>Destinos disponibles</span></div>
+          <div class="stat-card"><strong>2</strong><span>Lenguas originarias</span></div>
+          <div class="stat-card"><strong>5</strong><span>Leyendas y mitos</span></div>
+          <div class="stat-card"><strong>10</strong><span>Niveles de aprendizaje</span></div>
+        </div>
+
+        <div class="quick-actions-grid">
+          <div class="quick-card" onclick="mostrarModulo('turismo')">
+            <div class="icon-box">🗺️</div>
+            <h3>Turismo Animado</h3>
+            <p>Explora mapas interactivos y guías de destinos imperdibles en los 17 departamentos.</p>
+          </div>
+          <div class="quick-card" onclick="mostrarModulo('idiomas')">
+            <div class="icon-box">🗣️</div>
+            <h3>Gamificación Lingüística</h3>
+            <p>Aprende vocabulario en Mayagna y Miskito con niveles, puntos y vidas.</p>
+          </div>
+          <div class="quick-card" onclick="mostrarModulo('leyendas')">
+            <div class="icon-box">📜</div>
+            <h3>Tradición Oral</h3>
+            <p>Sumérgete en la mitología nacional: La Cegua, El Cadejo, La Mocuana y más.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== TURISMO ==================== -->
+      <div id="turismo" class="modulo">
+        <div class="page-header">
+          <h1>Turismo e Historias</h1>
+          <p>Descubre la belleza de Nicaragua, departamento por departamento.</p>
+        </div>
+
+        <div class="turismo-toolbar">
+          <div class="turismo-search">
+            <span class="icon">🔍</span>
+            <input type="text" id="searchPlace" placeholder="Buscar destino en Nicaragua..." />
+          </div>
+          <div class="turismo-filtros">
+            <button class="filtro-chip activo" data-categoria="todas">Todas</button>
+            <button class="filtro-chip" data-categoria="Cultural">Cultural</button>
+            <button class="filtro-chip" data-categoria="Naturaleza">Naturaleza</button>
+            <button class="filtro-chip" data-categoria="Playa">Playa</button>
+            <button class="filtro-chip" data-categoria="Aventura">Aventura</button>
+          </div>
+        </div>
+
+        <div class="turismo-layout">
+          <div class="turismo-map-panel">
+            <div id="mapContainer" class="map-container"></div>
+            <div id="turismoListaMini" class="turismo-lista"></div>
+          </div>
+          <div class="turismo-info-panel">
+            <div id="placeDetails" class="place-details empty">
+              <span class="emoji-grande">🗺️</span>
+              <h3>Información del lugar</h3>
+              <p id="placeInfo">Selecciona un lugar en el mapa o en la lista para ver su información turística.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==================== IDIOMAS ==================== -->
+      <div id="idiomas" class="modulo">
+        <div class="page-header">
+          <h1>Aprende Idiomas</h1>
+          <p>Aprende Mayagna y Miskito de forma interactiva.</p>
+        </div>
+
+        <div id="welcome" class="card card-idioma visible">
+          <div class="idioma-header">
+            <h1>¡Aprende jugando! 🌱</h1>
+            <p>Domina el vocabulario básico de las lenguas originarias de Nicaragua.</p>
+          </div>
+          <button class="main-btn" onclick="openMenu()">🚀 Entrar al menú</button>
+        </div>
+
+        <div id="menu" class="card card-idioma">
+          <div class="idioma-header">
+            <h1>Elige un idioma</h1>
+            <p>Selecciona la lengua que deseas aprender</p>
+          </div>
+          <div class="language-cards-row">
+            <div class="language-card" onclick="selectLanguage('Mayagna')">
+              <div class="language-icon">🌳</div>
+              <div class="language-title">Mayagna</div>
+              <div class="language-sub">Aprende la lengua Mayagna</div>
+            </div>
+            <div class="language-card" onclick="selectLanguage('Miskito')">
+              <div class="language-icon">🌊</div>
+              <div class="language-title">Miskito</div>
+              <div class="language-sub">Aprende la lengua Miskito</div>
+            </div>
+          </div>
+          <div style="text-align:center;"><button class="back-btn" onclick="backToWelcome()">⬅️ Volver</button></div>
+        </div>
+
+        <div id="levels" class="card card-idioma">
+          <div class="idioma-header">
+            <h1 id="languageTitle">Idioma</h1>
+            <p>Ruta de aprendizaje</p>
+          </div>
+          <div class="niveles-mapa">
+            <div id="level1" class="level-node" onclick="openLevel(1)">1</div>
+            <div class="level-text">Saludos</div>
+            <div class="nivel-linea"></div>
+            <div id="level2" class="level-node locked" onclick="openLevel(2)">🔒</div>
+            <div class="level-text">Vocabulario</div>
+            <div class="nivel-linea"></div>
+            <div id="level3" class="level-node locked" onclick="openLevel(3)">🔒</div>
+            <div class="level-text">Naturaleza</div>
+            <div class="nivel-linea"></div>
+            <div id="level4" class="level-node locked" onclick="openLevel(4)">🔒</div>
+            <div class="level-text">Nivel 4</div>
+            <div class="nivel-linea"></div>
+            <div id="level5" class="level-node locked" onclick="openLevel(5)">🔒</div>
+            <div class="level-text">Nivel 5</div>
+          </div>
+          <div style="text-align:center;"><button class="back-btn" onclick="backMenu()">⬅️ Cambiar idioma</button></div>
+        </div>
+
+        <div id="game" class="card card-idioma">
+          <div class="top-info">
+            <span id="gameLanguage">Idioma</span>
+            <span id="levelName">Nivel 1</span>
+            <div id="lives">❤️❤️❤️❤️❤️</div>
+            <div>⭐ <span id="points">0</span> pts</div>
+          </div>
+          <div class="progress"><div id="bar" class="bar"></div></div>
+          <div class="top-info" style="justify-content:center;">Pregunta <span id="count">1</span></div>
+          <div id="question" class="question">¿Cómo se dice...?</div>
+          <div id="options"></div>
+          <div style="text-align:center;"><button class="back-btn" onclick="backLevels()">🏳️ Abandonar</button></div>
+        </div>
+      </div>
+
+      <!-- ==================== LEYENDAS ==================== -->
+      <div id="leyendas" class="modulo">
+        <div class="page-header">
+          <h1>Leyendas y Mitos</h1>
+          <p>Historias que han pasado de generación en generación.</p>
+        </div>
+        <div class="leyendas-layout">
+          <div class="card leyendas-sidebar">
+            <h3>📜 Catálogo de Leyendas</h3>
+            <div id="listaLeyendas"></div>
+          </div>
+          <div class="card leyendas-viewer" id="leyendaViewer">
+            <div class="viewer-placeholder">
+              <span style="font-size:50px;">📜</span>
+              <h3>Selecciona una historia para comenzar</h3>
+              <p>Descubre los mitos y relatos de nuestra cultura.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/theme.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/turismo.js"></script>
+  <script src="js/idiomas.js"></script>
+  <script src="js/leyendas.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "name": "nexoraiz",
+  "version": "1.0.0",
+  "description": "NexoRaiz — plataforma de turismo, lenguas indígenas y tradición oral de Nicaragua. Hackathon Nicaragua.",
+  "main": "backend/server.js",
+  "scripts": {
+    "start": "node backend/server.js"
+  },
+  "keywords": ["nicaragua", "turismo", "mayagna", "miskitu", "hackathon"],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {}
+}

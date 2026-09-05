@@ -1,0 +1,35 @@
+/* ==========================================================
+   NEXORAIZ — Módulo de Leyendas y Mitos
+   ========================================================== */
+
+.leyendas-layout { display: grid; grid-template-columns: 300px 1fr; gap: 22px; align-items: flex-start; }
+@media (max-width: 880px) { .leyendas-layout { grid-template-columns: 1fr; } }
+
+.leyendas-sidebar { max-height: 620px; overflow-y: auto; }
+.leyendas-sidebar h3 { font-size: 15px; margin-bottom: 16px; }
+
+.leyenda-item-btn {
+  padding: 13px 14px; border-radius: var(--radius-sm); border: 1px solid var(--border-color); background: var(--bg-surface);
+  cursor: pointer; margin-bottom: 10px; transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.leyenda-item-btn:hover { border-color: var(--color-primary); transform: translateX(3px); }
+.leyenda-item-btn.activo { border-color: var(--color-primary); background: rgba(31,109,58,0.08); }
+.leyenda-item-btn h4 { font-size: 14.5px; margin-bottom: 4px; }
+.leyenda-item-btn small { color: var(--text-muted); font-size: 12px; }
+
+.leyendas-viewer { min-height: 500px; }
+.viewer-placeholder {
+  display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center;
+  padding: 90px 30px; color: var(--text-muted); height: 100%;
+}
+
+.leyenda-header-view { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; flex-wrap: wrap; gap: 10px; }
+.leyenda-header-view h2 { font-size: 24px; }
+.tag-origen { background: rgba(139,198,63,0.2); color: var(--color-primary); padding: 6px 14px; border-radius: 999px; font-size: 12.5px; font-weight: 700; }
+
+.leyenda-media { border-radius: var(--radius-md); overflow: hidden; margin-bottom: 18px; background: var(--bg-surface-alt); min-height: 60px; }
+.leyenda-img { width: 100%; max-height: 320px; object-fit: cover; display: block; }
+
+.leyenda-content-text .sinopsis-text { font-size: 16px; color: var(--color-primary); font-weight: 600; margin-bottom: 14px; }
+.leyenda-content-text hr { border: none; border-top: 1px solid var(--border-color); margin: 16px 0; }
+.narracion-p { font-size: 15px; line-height: 1.8; color: var(--text-main); }

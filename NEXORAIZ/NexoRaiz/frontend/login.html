@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión — NEXORAIZ</title>
+  <link rel="icon" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+  <div class="auth-shell">
+
+    <div class="auth-visual">
+      <div class="auth-brand">
+        <img src="images/logo.png" alt="NexoRaíz" />
+        <div class="brand-text">
+          <strong>NEXORAIZ</strong>
+          <span>Nuestras raíces, nuestro futuro.</span>
+        </div>
+      </div>
+
+      <div class="auth-visual-copy">
+        <h1>Bienvenido <em>de nuevo</em></h1>
+        <p>Inicia sesión para continuar explorando nuestras raíces y tradiciones.</p>
+
+        <div class="auth-features">
+          <div class="auth-feature">
+            <div class="icon">🗺️</div>
+            <div><h4>Explora</h4><p>Descubre destinos, historias y culturas únicas de Nicaragua.</p></div>
+          </div>
+          <div class="auth-feature">
+            <div class="icon">🗣️</div>
+            <div><h4>Aprende</h4><p>Aprende lenguas originarias de forma interactiva.</p></div>
+          </div>
+          <div class="auth-feature">
+            <div class="icon">🤝</div>
+            <div><h4>Conecta</h4><p>Conecta con nuestras raíces y preserva nuestra identidad.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="auth-quote">"NexoRaíz es más que una plataforma, es un viaje a nuestras raíces."</div>
+    </div>
+
+    <div class="auth-form-panel">
+      <div class="auth-form-topbar">
+        <a href="index.html" style="font-size:14px;color:var(--text-muted);">← Volver al inicio</a>
+        <button class="theme-toggle" data-toggle-theme><span data-theme-icon>🌙</span></button>
+      </div>
+
+      <div class="auth-form-wrap">
+        <h2>Iniciar sesión</h2>
+        <p class="subtitle">Ingresa tus credenciales para continuar.</p>
+
+        <div id="login-msg" class="form-msg"></div>
+
+        <form id="form-login">
+          <div class="field">
+            <label>Correo electrónico</label>
+            <div class="input-wrap">
+              <span class="prefix-icon">✉️</span>
+              <input type="email" id="login-email" placeholder="ejemplo@correo.com" required />
+            </div>
+          </div>
+
+          <div class="field">
+            <label>Contraseña</label>
+            <div class="input-wrap">
+              <span class="prefix-icon">🔒</span>
+              <input type="password" id="login-password" placeholder="Ingresa tu contraseña" required />
+              <button type="button" class="toggle-eye" id="toggle-login-pwd">👁️</button>
+            </div>
+          </div>
+
+          <div class="checkbox-row">
+            <input type="checkbox" id="recordarme" checked />
+            <label for="recordarme">Recordarme</label>
+          </div>
+
+          <button type="submit" class="btn-primario">Iniciar sesión →</button>
+        </form>
+
+        <div class="divider-text">o continúa con</div>
+        <div class="social-row">
+          <button class="btn-social" onclick="mostrarToast('Inicio con Google disponible próximamente.')">🔵 Google</button>
+          <button class="btn-social" onclick="mostrarToast('Inicio con Facebook disponible próximamente.')">🔷 Facebook</button>
+        </div>
+
+        <p style="text-align:center;margin-top:24px;font-size:14px;color:var(--text-muted);">
+          ¿No tienes cuenta? <a href="registro.html" style="color:var(--color-primary);font-weight:700;">Crear cuenta</a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Crear cuenta — NEXORAIZ</title>
+  <link rel="icon" href="images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/auth.css" />
+</head>
+<body>
+  <div class="auth-shell">
+
+    <div class="auth-visual">
+      <div class="auth-brand">
+        <img src="images/logo.png" alt="NexoRaíz" />
+        <div class="brand-text">
+          <strong>NEXORAIZ</strong>
+          <span>Nuestras raíces, nuestro futuro.</span>
+        </div>
+      </div>
+
+      <div class="auth-visual-copy">
+        <h1>Únete a <em>NexoRaíz</em></h1>
+        <p>Crea tu cuenta y comienza a explorar la riqueza cultural, turística y lingüística de Nicaragua.</p>
+      </div>
+
+      <div class="trust-box">
+        <div class="trust-item">🔒 <span>Tu información está encriptada</span></div>
+        <div class="trust-item">🚫 <span>No compartimos tus datos con terceros</span></div>
+        <div class="trust-item">✅ <span>Tú tienes el control de tu cuenta</span></div>
+      </div>
+    </div>
+
+    <div class="auth-form-panel">
+      <div class="auth-form-topbar">
+        <a href="index.html" style="font-size:14px;color:var(--text-muted);">← Volver al inicio</a>
+        <span class="switch-link">¿Ya tienes cuenta? <a href="login.html">Iniciar sesión</a></span>
+      </div>
+
+      <div class="auth-form-wrap">
+
+        <div class="steps-indicator">
+          <div class="step-dot activo" id="dot-1">1</div>
+          <div class="step-line"></div>
+          <div class="step-dot" id="dot-2">2</div>
+          <div class="step-line"></div>
+          <div class="step-dot" id="dot-3">3</div>
+        </div>
+        <div class="step-labels">
+          <span>Información personal</span>
+          <span>Preferencias</span>
+          <span>¡Listo!</span>
+        </div>
+
+        <form id="form-registro">
+
+          <!-- PASO 1 -->
+          <div id="paso-1">
+            <h2>Crear cuenta</h2>
+            <p class="subtitle">Únete a NexoRaíz y comienza a explorar.</p>
+
+            <div class="form-grid">
+              <div class="field">
+                <label>Nombres</label>
+                <div class="input-wrap"><span class="prefix-icon">👤</span><input type="text" id="reg-nombres" placeholder="Ingresa tus nombres" required /></div>
+              </div>
+              <div class="field">
+                <label>Apellidos</label>
+                <div class="input-wrap"><span class="prefix-icon">👤</span><input type="text" id="reg-apellidos" placeholder="Ingresa tus apellidos" required /></div>
+              </div>
+
+              <div class="field full">
+                <label>Correo electrónico</label>
+                <div class="input-wrap"><span class="prefix-icon">✉️</span><input type="email" id="reg-email" placeholder="ejemplo@correo.com" required /></div>
+              </div>
+              <div class="field full">
+                <label>Confirmar correo</label>
+                <div class="input-wrap"><span class="prefix-icon">✉️</span><input type="email" id="reg-email-confirm" placeholder="Confirma tu correo electrónico" required /></div>
+              </div>
+
+              <div class="field">
+                <label>Contraseña</label>
+                <div class="input-wrap">
+                  <span class="prefix-icon">🔒</span>
+                  <input type="password" id="reg-password" placeholder="Crea una contraseña" required />
+                  <button type="button" class="toggle-eye" id="toggle-pwd-1">👁️</button>
+                </div>
+                <div class="field-hint">Mínimo 6 caracteres.</div>
+              </div>
+              <div class="field">
+                <label>Confirmar contraseña</label>
+                <div class="input-wrap">
+                  <span class="prefix-icon">🔒</span>
+                  <input type="password" id="reg-password-confirm" placeholder="Confirma tu contraseña" required />
+                  <button type="button" class="toggle-eye" id="toggle-pwd-2">👁️</button>
+                </div>
+              </div>
+
+              <div class="field full">
+                <label>Fecha de nacimiento</label>
+                <div class="fecha-grid">
+                  <div class="input-wrap"><input type="number" id="reg-dia" placeholder="Día" min="1" max="31" /></div>
+                  <div class="input-wrap">
+                    <select id="reg-mes">
+                      <option value="">Mes</option>
+                      <option value="01">Enero</option><option value="02">Febrero</option><option value="03">Marzo</option>
+                      <option value="04">Abril</option><option value="05">Mayo</option><option value="06">Junio</option>
+                      <option value="07">Julio</option><option value="08">Agosto</option><option value="09">Septiembre</option>
+                      <option value="10">Octubre</option><option value="11">Noviembre</option><option value="12">Diciembre</option>
+                    </select>
+                  </div>
+                  <div class="input-wrap"><input type="number" id="reg-anio" placeholder="Año" min="1900" max="2025" /></div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" id="btn-siguiente-1" class="btn-primario">Continuar →</button>
+          </div>
+
+          <!-- PASO 2 -->
+          <div id="paso-2" style="display:none;">
+            <h2>¿Cómo quieres usar NexoRaíz?</h2>
+            <p class="subtitle">Puedes seleccionar más de una opción.</p>
+
+            <div class="intereses-grid">
+              <div class="interes-card" data-interes="Turismo">
+                <span class="check">✓</span>
+                <span class="emoji">🌐</span>
+                <h4>Turismo</h4>
+                <p>Explorar destinos, lugares y experiencias turísticas.</p>
+              </div>
+              <div class="interes-card" data-interes="Lenguas">
+                <span class="check">✓</span>
+                <span class="emoji">💬</span>
+                <h4>Lenguas</h4>
+                <p>Aprender lenguas originarias y preservar nuestra identidad.</p>
+              </div>
+              <div class="interes-card" data-interes="Historias">
+                <span class="check">✓</span>
+                <span class="emoji">📖</span>
+                <h4>Historias</h4>
+                <p>Leer leyendas, mitos y conocer nuestra historia.</p>
+              </div>
+              <div class="interes-card" data-interes="Cultura">
+                <span class="check">✓</span>
+                <span class="emoji">🎭</span>
+                <h4>Cultura</h4>
+                <p>Conocer más sobre nuestras tradiciones y costumbres.</p>
+              </div>
+              <div class="interes-card" data-interes="Educacion">
+                <span class="check">✓</span>
+                <span class="emoji">🎓</span>
+                <h4>Educación</h4>
+                <p>Como estudiante, docente o investigador.</p>
+              </div>
+            </div>
+
+            <div class="form-actions">
+              <button type="button" id="btn-volver-2" class="btn-secundario">⬅️ Volver</button>
+              <button type="button" id="btn-siguiente-2" class="btn-primario">Crear cuenta →</button>
+            </div>
+          </div>
+
+          <!-- PASO 3 -->
+          <div id="paso-3" style="display:none;">
+            <div class="resumen-listo">
+              <div class="icono-check">✓</div>
+              <h2>¡Tu cuenta está lista!</h2>
+              <p class="subtitle">Bienvenido a NexoRaíz. Ya puedes empezar a explorar Nicaragua.</p>
+              <button type="button" class="btn-primario" onclick="irAlApp()">Ir a mi cuenta →</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/theme.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>

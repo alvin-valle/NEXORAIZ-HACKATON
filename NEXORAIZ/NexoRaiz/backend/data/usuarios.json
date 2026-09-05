@@ -1,0 +1,19 @@
+[
+  {
+    "id": "5e01aa62-48b8-4ff0-bd32-411db850cea1",
+    "nombres": "Alvin",
+    "apellidos": "Valle",
+    "email": "alvinvalle2005@gmail.com",
+    "fechaNacimiento": "2005-12-27",
+    "intereses": [
+      "Turismo",
+      "Lenguas",
+      "Historias",
+      "Cultura",
+      "Educacion"
+    ],
+    "salt": "4e18e88bf14f6aca6a64dad4c027daf7",
+    "hash": "2e5afe3384d379f457d0592fe73d9326321fb6f10aa65368cc5af8beb5ba278c17e211b1e22633fc522e108f24cacea5b77da5ec37a13a74eef706910dfed164",
+    "creadoEn": "2026-09-05T05:19:26.586Z"
+  }
+]
